@@ -1,0 +1,236 @@
+<html>
+ <head>
+  <title>
+   Cổng Thông Tin Đào Tạo
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #d0e7f9; /* Background color similar to the banner */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #BFDFFF; /* Background color #BFDFFF */
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .login-box {
+            background-image: url('https://qlttgddt.hue.edu.vn/Css/home/dangnhap_moi.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            padding: 60px 20px; /* Further adjusted padding to move content down */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Smaller width for login box */
+            box-sizing: border-box;
+            color: #000; /* Black text color */
+        }
+        .login-box label {
+            display: block;
+            margin-bottom: 10px;
+            color: #000; /* Black text color */
+            font-weight: bold; /* Slightly bold */
+        }
+        .login-box input[type="text"], .login-box input[type="password"], .login-box select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .login-box button {
+            width: 50%; /* 50% width for the button */
+            padding: 10px;
+            background-image: url('https://qlttgddt.hue.edu.vn/Css/home/btn_dangnhap_moi.png');
+            background-size: cover;
+            background-position: center;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto; /* Center the button */
+        }
+        .announcement-box {
+            background-color: #5BC2F0; /* Background color #5BC2F0 */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 65%; /* Larger width for announcement box */
+            box-sizing: border-box;
+        }
+        .announcement-box h2 {
+            text-align: center;
+            color: #0000CD;
+        }
+        .announcement-box .announcement-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .announcement-box .announcement-header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .announcement-box p {
+            margin: 10px 0;
+            color: #000;
+        }
+        .announcement-box a {
+            color: #0000FF;
+            text-decoration: none;
+        }
+        .announcement-box .date {
+            color: #8B0000;
+        }
+        .announcement-box .bullet {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .pagination a {
+            color: #000;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            margin: 0 2px;
+            border-radius: 5px;
+        }
+        .pagination a.active {
+            background-color: #FF8C00;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            .login-box, .announcement-box {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .header img {
+                margin-bottom: 10px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <img alt="Banner of Sở giáo dục và đào tạo thành phố Huế" src="https://qlttgddt.hue.edu.vn/Css/home/banne_DangNhap.png"/>
+   </div>
+   <div class="content">
+    <div class="login-box">
+     <label for="login-type">
+      Kiểu đăng nhập
+     </label>
+     <select id="login-type">
+      <option>
+       Người dùng/Mật khẩu
+      </option>
+     </select>
+     <label for="username">
+      Người dùng
+     </label>
+     <input id="username" type="text"/>
+     <label for="password">
+      Mật khẩu
+     </label>
+     <input id="password" type="password"/>
+     <button>
+      Đăng nhập
+     </button>
+    </div>
+    <div class="announcement-box">
+     <div class="announcement-header">
+      <img alt="Thông Báo" src="https://qlttgddt.hue.edu.vn/Css/home/TieuDeTB.png"/>
+     </div>
+     <p>
+      <strong>
+       Hướng dẫn chức năng ký học bạ số
+      </strong>
+      <span class="date">
+       (Ngày đưa tin: 07/06/2024)
+      </span>
+     </p>
+     <p>
+      <strong>
+       File đính kèm:
+      </strong>
+     </p>
+     <p>
+      <a href="#">
+       <img alt="Bullet icon" class="bullet" src="https://qlttgddt.hue.edu.vn/Css/home/bulett_tin.png"/>
+       HuongDanSuDung_HBS.doc
+      </a>
+     </p>
+     <p>
+      <strong>
+       Thông báo khác:
+      </strong>
+     </p>
+     <p>
+      <img alt="Bullet icon" class="bullet" src="https://qlttgddt.hue.edu.vn/Css/home/bulett_tin.png"/>
+      Tải file cài đặt chữ ký số
+      <span class="date">
+       (06/06/2024)
+      </span>
+     </p>
+     <p>
+      <img alt="Bullet icon" class="bullet" src="https://qlttgddt.hue.edu.vn/Css/home/bulett_tin.png"/>
+      Cập nhật thông tin và báo cáo thống kê số liệu đầu năm học 2020-2021 trên Cổng thông tin GD&amp;ĐT
+      <span class="date">
+       (14/09/2020)
+      </span>
+     </p>
+     <p>
+      <img alt="Bullet icon" class="bullet" src="https://qlttgddt.hue.edu.vn/Css/home/bulett_tin.png"/>
+      Hướng dẫn chức năng kết xuất mã số và cấp lại mật khẩu cho học sinh
+      <span class="date">
+       (27/05/2020)
+      </span>
+     </p>
+     <div class="pagination">
+      <a class="active" href="#">
+       1
+      </a>
+      <a href="#">
+       2
+      </a>
+      <a href="#">
+       3
+      </a>
+      <a href="#">
+       4
+      </a>
+      <a href="#">
+       5
+      </a>
+      <a href="#">
+       6
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
